@@ -28,6 +28,7 @@ const AiEnabledAdmissions = () => {
   const [activeTag, setActiveTag] = useState(null);
   const [isFloating, setIsFloating] = useState(true);
 
+  //Tags to display
   const tags = [
     {
       id: 1,
@@ -95,6 +96,7 @@ const AiEnabledAdmissions = () => {
         ))}
       </div>
 
+       {/* Main heading... */}
       <h2 className="text-3xl font-bold text-orange-900 mb-2 relative z-10">
         AI-Enabled Admissions
       </h2>

@@ -1,8 +1,8 @@
 import React, { useState, useEffect } from 'react';
 
-// The main application component
+
 export default function SearchBar() {
-  // A helper function to flatten the nested navItems structure into a simple array.
+   
   // Flattening is important so that hidden/deeply nested pages are searchable. 
   const flattenNavItems = (navItems) => {
     const flattenedList = [];
@@ -44,8 +44,7 @@ export default function SearchBar() {
     return flattenedList;
   };
   
-  // The navItems data provided by the user.
-  // Note: 'programsData' is a placeholder and would need to be defined.
+  // The navItems data provided by the user. 
  const navItems = [
   { title: "Home", path: "/" },
   {
@@ -80,10 +79,10 @@ export default function SearchBar() {
   // State to hold the items that match the search query.
   const [filteredItems, setFilteredItems] = useState([]);
 
-  // State to manage the loading status of the data.
+  // State to manage the loading status  
   const [isLoading, setIsLoading] = useState(true);
 
-  // State to handle any errors during data fetching.
+  // State to handle any errors  
   const [error, setError] = useState(null);
 
   // A function to handle changes in the search input field.
@@ -130,8 +129,6 @@ export default function SearchBar() {
   }, [query]); // Re-run when query changes.
 
   return (
-    // Main container. It now has 'relative' positioning to serve as the reference point for the
-    // absolutely positioned search results.
     <div className="relative">
       {/* Search bar container */}
       <div className="relative">
@@ -147,17 +144,15 @@ export default function SearchBar() {
         </span>
         <input
           type="text"
-          placeholder="Search for a page..."
+          placeholder="Search"
           value={query}
           onChange={handleSearchChange}
-          // Tailwind classes for styling the input field
-          className="w-full py-3 pl-10 pr-4 text-gray-900 bg-gray-100 placeholder-gray-400 rounded-full focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent transition-colors duration-200"
+           
+          className="w-full py-3 pl-10 pr-4 text-gray-900 bg-gray-100 placeholder-gray-400 rounded-full focus:outline-none focus:ring-2 focus:ring-orange-500 focus:border-transparent transition-colors duration-200"
         />
       </div>
 
-      {/* This is the new search results container. 
-        It is now conditionally rendered and absolutely positioned.
-      */}
+     
       {query.trim() !== '' && (
         <div 
           className="absolute top-full left-0 right-0 mt-2 bg-white rounded-lg shadow-lg z-1000 p-4"
@@ -173,7 +168,7 @@ export default function SearchBar() {
               <ul className="divide-y divide-gray-200 max-h-96 overflow-y-auto z-1000">
                 {filteredItems.map(item => (
                   <li key={item.link} className="py-2">
-                    <a href={item.link} className="flex flex-col justify-start items-start text-gray-800 hover:text-blue-600 transition-colors duration-200">
+                    <a href={item.link} className="flex flex-col justify-start items-start text-gray-800 hover:text-orange-600 transition-colors duration-200">
                       <span className="font-medium">{item.name}</span>
                       {/* Display the path link below the title */}
                       <span className="text-xs text-gray-500 mt-1">{item.link}</span>
