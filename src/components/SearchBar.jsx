@@ -67,7 +67,7 @@ export default function SearchBar() {
       { title: "Admission Process", path: "/admission/admission-process" },
       { title: "Eligibility Criteria", path: "/admission/eligibility" },
       {
-        title: "Fee Structure", path: "/admission/fee-structure" },
+        title: "Fee Structure", path: "/ssitm/admission/fee-structure" },
     ],
   },
   { title: "Contact Us", path: "/contact-us" },

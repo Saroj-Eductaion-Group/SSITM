@@ -7,7 +7,7 @@ import Hero from './Hero.jsx';
 import VisionAndMission from './VisionAndMission.jsx';
 import ChairmanMessage from './ChairmanMessage.jsx';
 import AiLearningSection from './AiLearningSection.jsx';
-import  InstagramEmbed  from '../components/InstagramEmbed.jsx';
+import  CampusChronicles  from '../components/CampusChronicles.jsx';
 import AdmissionsOpen from '../components/AdmissionsOpen.jsx';
 import Flash from '../components/AiEnabledAdmissions.jsx';
 
@@ -19,12 +19,12 @@ function Home() {
       <AiLearningSection />
       <Recruiters />
       <AdmissionsOpen />
-      <Flash/>
+      {/* <Flash/>  */}
       <WhyChooseUs />
       <ChairmanMessage />
       <Placement />
       <VisionAndMission />
-      <InstagramEmbed />
+      <CampusChronicles />
       {/* <Courses /> */}
    
     </Layout>

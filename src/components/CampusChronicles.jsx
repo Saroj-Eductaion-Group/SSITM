@@ -3,7 +3,7 @@ import { InstagramEmbed } from "react-social-media-embed";
 import { FiInstagram } from "react-icons/fi";
 import { motion } from "framer-motion";
 
-const InstagramFeed = () => {
+const CampusChronicles = () => {
   const instagramPosts = [
     {
       url: "https://www.instagram.com/ssitmalg/p/DMKXnFLie3z/",
@@ -120,4 +120,4 @@ const InstagramFeed = () => {
   );
 };
 
-export default InstagramFeed;
+export default CampusChronicles;

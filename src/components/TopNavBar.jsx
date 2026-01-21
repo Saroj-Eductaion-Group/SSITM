@@ -80,7 +80,7 @@ const TopNav = () => {
         <span className="text-white font-extrabold text-xl">AKTU Code: 007</span>
       </div>
       <div>
-        {/* <SearchBar/> */}
+        <SearchBar/>
       </div>
     </div>
   );

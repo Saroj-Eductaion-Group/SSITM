@@ -86,9 +86,9 @@ const Hero = () => {
             variants={itemVariants}
           >
             {/* Badge */}
-            <motion.div className="inline-block bg-orange-100 text-orange-600 font-semibold px-4 py-1 rounded-full text-md mb-4" variants={itemVariants}>
-              🎓 Established Excellence in Tech & Management
-            </motion.div>
+            <motion.div className="inline-block bg-orange-100 text-orange-600 font-semibold px-4 py-1  rounded-full text-md mb-4" variants={itemVariants}>
+              🎓 Established Excellence in Tech & Management 
+            </motion.div> 
 
             {/* Heading */}
             <motion.h1 className="text-4xl md:text-6xl font-bold text-gray-900 leading-tight" whileHover={{ scale: 1.02 }}>
