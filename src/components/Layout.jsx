@@ -1,7 +1,7 @@
 import Header from './Header'
 import Footer from './Footer'
 import TopNav from './TopNavBar';
-// import Modal from '../pages/Modal';
+import Modal from '../pages/Modal';
 import Chatbot from '../pages/Chatbot';
 import TechnologyCTA from '../pages/TechnologyCTA';
 import HeaderCTA from './HeaderCTA';
@@ -11,8 +11,8 @@ import ScholarshipPopup from './ScholarshipPopup';
 function Layout({children}){
     return (
         <div className="flex flex-col min-h-screen">
-            {/* <Modal /> */}
-            <ScholarshipPopup/>
+            <Modal />
+            {/* <ScholarshipPopup/> */}
             <HeaderCTA />
             <TopNav/>
             <Header />
